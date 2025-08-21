@@ -233,7 +233,6 @@ code {
   font-family: var(--fontC);
 }
 
-
 /* download techlystb */
 
 /* List Info techlystb*/
@@ -406,62 +405,7 @@ label.switch {background-color:#d1d1d1;border-radius:8px}
   cursor: pointer;
   font-size: 16px;
 }/*-- Share QR End --*/
- /* CSS News Ticker */
-.ticker-wrap {
-  display: block;
-  border-top-left-radius: 21px;
-  text-align: center;
-  margin: 0 0px 20px 0px;
-  padding: 5px;
-  background: #fefefe;
-  border-left: 5px solid #db3535
-}
-.ticker-wrap>span {
-  display: inline-block;
-  background: #fefefe;
-  padding: 0;
-  font: 700 13px 'roboto', sans-serif;
-}
-.ticker-wrap>span>a {
-  color: #222;
-  text-decoration: none
-}
-#ticker {
-  height: 45px;
-  overflow: hidden;
-  background: #fefefe;
-  text-align: left
-}
-#ticker ul {
-  padding: 0;
-  margin: 0;
-  list-style: none
-}
-#ticker ul li {
-  height: 45px;
-  white-space: nowrap
-}
-#ticker ul li img {
-  float: left;
-  border-top-left-radius: 11px;
-  width: 35px;
-  height: 35px;
-  margin: 5px 7px 5px 5px
-}
-#ticker ul li h3 {
-  margin: 0;
-  font: 700 16px 'roboto', sans-serif
-}
-#ticker ul li h3 a {
-  color: #f10707;
-  text-decoration: none;
-  line-height: 25px!important
-}
-#ticker ul li .tickermeta {
-  font: 400 13px 'roboto', sans-serif;
-  line-height: 20px!important;
-  color: #999
-}
+ 
 /* Tools widget */
 .asyoutube{position:relative;display:flex;align-items:center;width:100%;background-color:#fefefe;margin:15px 0 0;padding:12px 15px;border:1px solid #ebeced;border-radius:3px;color:#161617;overflow:hidden
 }
