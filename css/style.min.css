@@ -5,7 +5,7 @@
 /* Label */
  /*.pLbls::before, .pLbls >*::before{content:attr(data-text)} .pLbls::before{opacity:.7} .pLbls a:hover{text-decoration:underline} .pLbls >*{color:inherit;display:inline;padding:16px 0} .pLbls >*:not(:last-child)::after{content:'/'}*/
  
- * Label Bot in the post */
+ /* Label Bot in the post */
 .pLbL > a{padding: 9px 12px;background:#fffdfc;color:#08102b;font-size: 13px;border-radius:50px;box-shadow: 3px 6px 15px rgba(0,0,0,.07);margin-right: 5px;}
 .pLbL{display: block;direction: ltr;text-align: left;margin-bottom: 25px;}
 .pLbL > a::before {content: '/';font-size: 15px;}
