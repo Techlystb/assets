@@ -1,0 +1,16 @@
+/* Tools widget */
+.asyoutube{position:relative;display:flex;align-items:center;width:100%;background-color:#fefefe;margin:15px 0 0;padding:12px 15px;border:1px solid #ebeced;border-radius:3px;color:#161617;overflow:hidden
+}
+.asyoutube .asyoutube-img{width:50px;height:50px}
+.asyoutube .asyoutube-img span{display:flex;align-items:center;justify-content:center;height:100%;background-color:#ebeced;border-radius:8px;color:#505050;font-weight:700;font-size:28px}
+.asyoutube .asyoutube-content{width:calc(100% - 50px);padding-right:15px}
+.asyoutube .asyoutube-content .title{display:block;font-weight:700;font-size:12px;margin:0}
+.asyoutube .asyoutube-content .desc{display:block;font-size:11px;margin-top:2px;color:#505050}
+.asyoutube.fletro{border:0;background-color:#CFEDEB;box-shadow:0 4px 18px 0 rgba(9,32,76,.035);justify-content:space-between;padding:0;overflow:visible}
+.asyoutube.fletro .asyoutube-content{width:calc(100% - 100px);padding:15px 10px 15px 15px}
+.asyoutube.fletro .asyoutube-img{width:100px;height:auto;flex-shrink:0}
+.asyoutube.fletro .asyoutube-img img{position:absolute;bottom:0;right:0;max-width:110px}
+.asyoutube.discount:after{content:'SEO Tools';font-weight:700;font-size:12px;display:flex;align-items:center;
+justify-content:flex-end;width:80px;height:23px;padding-right:10px;background-color:#fa0324;
+border-radius:20px 20px 2px 2px;color:#ffffff;position:absolute;bottom:0;right:0}
+           
