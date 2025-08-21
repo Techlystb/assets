@@ -1,1 +1,15 @@
 
+const styles = [
+  "https://cdn.jsdelivr.net/gh/Techlystb/assets/css/style1.css",
+  "https://cdn.jsdelivr.net/gh/Techlystb/assets/css/style2.css",
+  "https://cdn.jsdelivr.net/gh/Techlystb/assets/css/style3.css"
+];
+
+styles.forEach(href => {
+  const l = document.createElement("link");
+  l.rel = "stylesheet";
+  l.href = href;
+  document.head.appendChild(l);
+});
+
+
