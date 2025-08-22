@@ -1,6 +1,4 @@
 
-/* Error Page */ .erroP{display:flex;align-items:center;justify-content:center;height:100vh;text-align:center;padding:0} .erroC{width:calc(100% - 40px);max-width:450px;margin:auto;font-family:var(--fontBa)} .erroC h3{font-size:1.414rem;font-family:inherit} .erroC h3 span:not(.e){position:relative} .erroC h3 span.e{display:block;font-size:140px;line-height:.8;margin-bottom:-1rem;color:#ebebf0} .erroC h3 span.e{animation:glitch 1s linear infinite} .erroC h3 span.e::before, .erroC h3 span.e::after{content:attr(title);position:absolute;left:0;right:0} .erroC h3 span.e::before{animation:glitchTop 1s linear infinite;clip-path:polygon(0 0, 100% 0, 100% 33%, 0 33%);-webkit-clip-path:polygon(0 0, 100% 0, 100% 33%, 0 33%)} .erroC h3 span.e::after{animation:glitchBotom 1.5s linear infinite;clip-path:polygon(0 67%, 100% 67%, 100% 100%, 0 100%);-webkit-clip-path:polygon(0 67%, 100% 67%, 100% 100%, 0 100%)} .erroC p{margin:30px 5%;line-height:1.6em;opacity:.7} .erroC .button{margin:0;padding-left:2em;padding-right:2em;font-size:14px}
-
 /* 404 Error Custom */
  * {
     box-sizing: border-box;
