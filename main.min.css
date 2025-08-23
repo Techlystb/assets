@@ -3,7 +3,8 @@ const styles = [
   "https://cdn.jsdelivr.net/gh/Techlystb/assets/css/404Erorr.min.css",
   "https://cdn.jsdelivr.net/gh/Techlystb/assets/css/Discount.min.css",
   "https://cdn.jsdelivr.net/gh/Techlystb/assets/css/style.min.css",
-  "https://cdn.jsdelivr.net/gh/Techlystb/assets/css/AutomaticThemeChanger.min.css"
+  "https://cdn.jsdelivr.net/gh/Techlystb/assets/css/AutomaticThemeChanger.min.css",
+  "https://cdn.jsdelivr.net/gh/Techlystb/assets/css/Blogs.min.css"
 ];
 
 styles.forEach(href => {
