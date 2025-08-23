@@ -48,7 +48,7 @@ button{
     font-size: 16px;
     font-weight: 600;
     background: linear-gradient(45deg, #007bff, #00c6ff);
-    color: #fff;
+   /* color: #fff;*/
     border: none;
     border-radius: 50px;
     cursor: pointer;
