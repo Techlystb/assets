@@ -1,9 +1,29 @@
 
+/* ONE LINE LIVE DATE CLOCK */
+.live-clock{display:flex;
+ align-items:center;
+  gap:.6rem;
+  flex-wrap:wrap;
+ background:rgba(230,57,70,.08);
+  border:1px solid rgba(230,57,70,.2);
+  border-radius:100px;
+  padding:.4rem 1.2rem;
 
+  font-family:'Space Mono',monospace;
+  font-size:.54rem;
 
-
-
-
+  margin-bottom:1.5rem;
+  animation:fadeIn 1s 1.2s both}
+  
+/* LIVE CLOCK */
+.clock-label{font-family:'Space Mono',monospace;font-size:.6rem;letter-spacing:.3em;
+  text-transform:uppercase;color:var(--red);font-weight:700}
+.clock-dot{width:6px;height:6px;border-radius:50%;background:var(--red);
+  animation:blink 1s infinite}
+.clock-time{font-family:'Space Mono',monospace;font-size:.85rem;
+  letter-spacing:.1em;color:var(--chalk)}
+.clock-zone{font-family:'Space Mono',monospace;font-size:.55rem;
+  letter-spacing:.2em;color:var(--steel)}
 
 /*! Custom PWA install button by */
 .pwa-button{position:fixed;z-index:999;left:20px;bottom:75px;display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:none;border-radius:50%;background:#1900ff;visibility:visible;opacity:1;transition:visibility .5s,opacity .5s}
@@ -362,65 +382,12 @@ label.switch {background-color:#d1d1d1;border-radius:8px}
 /* ---Main-IH3 snip1543 page pic--- */
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro); @import url(https://fonts.googleapis.com/css?family=Teko:700); .Main-IH3{display:flex;justify-content:center;align-items:center;flex-flow:wrap;margin:0;height:100%;} .snip1543 { background-color: #fff; color: #ffffff; font-family: 'Source Sans Pro', sans-serif; font-size: 16px; margin: 10px; max-width: 315px; min-width: 230px; overflow: hidden; position: relative; text-align: left; width: 100%; -webkit-transform: translateZ(0); transform: translateZ(0); } .snip1543 *, .snip1543 *:before, .snip1543 *:after { -webkit-box-sizing: border-box; box-sizing: border-box; -webkit-transition: all 0.45s ease; transition: all 0.45s ease; } .snip1543 img { backface-visibility: hidden; max-width: 100%; vertical-align: top; } .snip1543:before, .snip1543:after { position: absolute; top: 0; bottom: 0; left: 0; right: 0; content: ''; background-color:#ff4a03; opacity: 0.5; -webkit-transition: all 0.45s ease; transition: all 0.45s ease; } .snip1543:before { -webkit-transform: skew(30deg) translateX(-80%); transform: skew(30deg) translateX(-80%); } .snip1543:after { -webkit-transform: skew(-30deg) translateX(-70%); transform: skew(-30deg) translateX(-70%); } .snip1543 figcaption { position: absolute; top: 0px; bottom: 0px; left: 0px; right: 0px; z-index: 1; bottom: 0; padding: 25px 40% 25px 20px; } .snip1543 figcaption:before, .snip1543 figcaption:after { position: absolute; top: 0; bottom: 0; left: 0; right: 0; background-color: #b81212; box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); content: ''; opacity: 0.5; z-index: -1; } .snip1543 figcaption:before { -webkit-transform: skew(30deg) translateX(-100%); transform: skew(30deg) translateX(-100%); } .snip1543 figcaption:after { -webkit-transform: skew(-30deg) translateX(-90%); transform: skew(-30deg) translateX(-90%); } .snip1543 h3, .snip1543 p { margin: 0; opacity: 0; letter-spacing: 1px; } .snip1543 h3 { font-family: 'Teko', sans-serif; font-size: 36px; font-weight: 700; line-height: 1em; text-transform: uppercase; } .snip1543 p { font-size: 0.9em; } .snip1543 a { position: absolute; top: 0; bottom: 0; left: 0; right: 0; z-index: 1; } .snip1543:hover h3, .snip1543.hover h3, .snip1543:hover p, .snip1543.hover p { -webkit-transform: translateY(0); transform: translateY(0); opacity: 0.9; -webkit-transition-delay: 0.2s; transition-delay: 0.2s; } .snip1543:hover:before, .snip1543.hover:before { -webkit-transform: skew(30deg) translateX(-20%); transform: skew(30deg) translateX(-20%); -webkit-transition-delay: 0.05s; transition-delay: 0.05s; } .snip1543:hover:after, .snip1543.hover:after { -webkit-transform: skew(-30deg) translateX(-10%); transform: skew(-30deg) translateX(-10%); } .snip1543:hover figcaption:before, .snip1543.hover figcaption:before { -webkit-transform: skew(30deg) translateX(-40%); transform: skew(30deg) translateX(-40%); -webkit-transition-delay: 0.15s; transition-delay: 0.15s; } .snip1543:hover figcaption:after, .snip1543.hover figcaption:after { -webkit-transform: skew(-30deg) translateX(-30%); transform: skew(-30deg) translateX(-30%); -webkit-transition-delay: 0.1s; transition-delay: 0.1s; } 
 
- /* CSS News Ticker */
-.ticker-wrap {
-  display: block;
-  border-top-left-radius: 21px;
-  text-align: center;
-  margin: 0 0px 20px 0px;
-  padding: 5px;
-  background: #fefefe;
-  border-left: 5px solid #db3535
-}
-.ticker-wrap>span {
-  display: inline-block;
-  background: #fefefe;
-  padding: 0;
-  font: 700 13px 'roboto', sans-serif;
-}
-.ticker-wrap>span>a {
-  color: #222;
-  text-decoration: none
-}
-#ticker {
-  height: 45px;
-  overflow: hidden;
-  background: #fefefe;
-  text-align: left
-}
-#ticker ul {
-  padding: 0;
-  margin: 0;
-  list-style: none
-}
-#ticker ul li {
-  height: 45px;
-  white-space: nowrap
-}
-#ticker ul li img {
-  float: left;
-  border-top-left-radius: 11px;
-  width: 35px;
-  height: 35px;
-  margin: 5px 7px 5px 5px
-}
-#ticker ul li h3 {
-  margin: 0;
-  font: 700 16px 'roboto', sans-serif
-}
-#ticker ul li h3 a {
-  color: #f10707;
-  text-decoration: none;
-  line-height: 25px!important
-}
-#ticker ul li .tickermeta {
-  font: 400 13px 'roboto', sans-serif;
-  line-height: 20px!important;
-  color: #999
-}
-/* Tools widget */
-.asyoutube{position:relative;display:flex;align-items:center;width:100%;background-color:#fefefe;margin:15px 0 0;padding:12px 15px;border:1px solid #ebeced;border-radius:3px;color:#161617;overflow:hidden
-}
+ 
+
+
+
+/* Free SEO Generator Tools Ticker */
+.asyoutube{position:relative;display:flex;align-items:center;width:100%;background-color:#fefefe;margin:15px 0 0;padding:12px 15px;border:1px solid #ebeced;border-radius:3px;color:#161617;overflow:hidden}
 .asyoutube .asyoutube-img{width:50px;height:50px}
 .asyoutube .asyoutube-img span{display:flex;align-items:center;justify-content:center;height:100%;background-color:#ebeced;border-radius:8px;color:#505050;font-weight:700;font-size:28px}
 .asyoutube .asyoutube-content{width:calc(100% - 50px);padding-right:15px}
@@ -433,6 +400,77 @@ label.switch {background-color:#d1d1d1;border-radius:8px}
 .asyoutube.discount:after{content:'SEO Tools';font-weight:700;font-size:12px;display:flex;align-items:center;
 justify-content:flex-end;width:80px;height:23px;padding-right:10px;background-color:#fa0324;
 border-radius:20px 20px 2px 2px;color:#ffffff;position:absolute;bottom:0;right:0}
+
+ /* CSS News Ticker */
+.ticker-wrap {
+  display: block;
+  border-top-left-radius: 21px;
+  text-align: center;
+  margin: 0 0px 20px 0px;
+  padding: 5px;
+  background: #fefefe;
+  border-left: 5px solid #db3535
+
+}
+
+.ticker-wrap>span {
+  display: inline-block;
+  background: #fefefe;
+  padding: 0;
+  font: 700 13px 'roboto', sans-serif;
+}
+
+.ticker-wrap>span>a {
+  color: #222;
+  text-decoration: none
+}
+
+#ticker {
+  height: 45px;
+  overflow: hidden;
+  background: #fefefe;
+  text-align: left
+}
+
+#ticker ul {
+  padding: 0;
+  margin: 0;
+  list-style: none
+}
+
+#ticker ul li {
+  height: 45px;
+  white-space: nowrap
+}
+
+#ticker ul li img {
+  float: left;
+  border-top-left-radius: 11px;
+  width: 35px;
+  height: 35px;
+  margin: 5px 7px 5px 5px
+}
+
+#ticker ul li h3 {
+  margin: 0;
+  font: 700 16px 'roboto', sans-serif
+}
+
+#ticker ul li h3 a {
+  color: #f10707;
+  text-decoration: none;
+  line-height: 25px!important
+}
+
+#ticker ul li .tickermeta {
+  font: 400 13px 'roboto', sans-serif;
+  line-height: 20px!important;
+  color: #999
+}
+
+
+
+
 /* Post Body */
 .post-body a.b-tooltip-container {
       position: relative;
