@@ -1,11 +1,42 @@
-
-
 /*! Custom PWA install button by */
 .pwa-button{position:fixed;z-index:999;left:20px;bottom:75px;display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:none;border-radius:50%;background:#1900ff;visibility:visible;opacity:1;transition:visibility .5s,opacity .5s}
 .pwa-button[hidden]{display:flex;visibility:hidden;opacity:0}
 .pwa-button:not([disabled])::before{content:'';position:absolute;z-index:-1;inset:0;background:inherit;border-radius:inherit;animation:1s cubic-bezier(0,0,.2,1) infinite pwa-button-ping}
 .pwa-button svg.flash{width:22px;height:22px;fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.4}
 @keyframes pwa-button-ping{75%,to{transform:scale(1.6);opacity:0}}
+
+ /* liveCard*/
+button{
+    background:#E0FFFF;
+    border:2px solid #fff;
+    padding:0.25rem;
+    border-radius:26px;
+    transition:150ms;
+}
+  .card {
+      position: center;
+      width: 100vw;
+      max-width: 100%;
+      padding: 20px;
+     /* background: linear-gradient(145deg, #1f1f1f, #2b2b2b);*/
+      border-radius: 15px;
+      transition: 0.3s;
+     /* box-shadow: 0 0 25px #00ff88;*/
+      border: 3px solid #fff;
+
+    box-shadow: 0 0 10px rgb(255, 0, 191),
+
+          0 0 20px rgba(226, 4, 255, 0.5),
+
+          0 0 30px rgba(195, 0, 255, 0.5),
+
+          inset 0 0 10px rgb(204, 0, 255);
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 35px #00ff88, 0 0 60px #00ff88;
+    }
 
 /* App Install Button Page */
   .install-app-btn {
