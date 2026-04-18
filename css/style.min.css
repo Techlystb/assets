@@ -1,5 +1,41 @@
 
 
+/*! Custom PWA install button by */
+.pwa-button{position:fixed;z-index:999;left:20px;bottom:75px;display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:none;border-radius:50%;background:#1900ff;visibility:visible;opacity:1;transition:visibility .5s,opacity .5s}
+.pwa-button[hidden]{display:flex;visibility:hidden;opacity:0}
+.pwa-button:not([disabled])::before{content:'';position:absolute;z-index:-1;inset:0;background:inherit;border-radius:inherit;animation:1s cubic-bezier(0,0,.2,1) infinite pwa-button-ping}
+.pwa-button svg.flash{width:22px;height:22px;fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.4}
+@keyframes pwa-button-ping{75%,to{transform:scale(1.6);opacity:0}}
+
+/* App Install Button Page */
+  .install-app-btn {
+   /* display: inline-flex;
+    align-items: center;*/
+    
+   right: 50px;
+    padding: 10px 18px;
+    font-size: 16px;
+    font-weight: 600;
+    background: linear-gradient(45deg, #007bff, #00c6ff);
+   /* color: #fff;*/
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+    transition: all 0.3s ease;
+    gap: 8px;
+  }
+
+  .install-app-btn:hover {
+    background: linear-gradient(45deg, #0056b3, #00aaff);
+    box-shadow: 0 6px 14px rgba(0, 123, 255, 0.5);
+  }
+
+  .install-app-btn svg {
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+  }
 
 /* Header section RGB Color */ .headI{position:relative;display:flex;align-items:center;justify-content:center} @keyframes animate{to{background-position:200% center}} .headH .headTtl{background:linear-gradient(330deg,#6d1989 0%,#1f70d9 25%,#6140b6 50%,#7f00ff 75%,#6d1989 100%);background-size:200% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;animation:animate 1.5s linear infinite; font:700 20px var(--fontB); overflow:hidden;white-space:nowrap;text-overflow:ellipsis; display:block}
 /* Label */
