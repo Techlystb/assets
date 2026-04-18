@@ -1,3 +1,10 @@
+
+
+
+
+
+
+
 /*! Custom PWA install button by */
 .pwa-button{position:fixed;z-index:999;left:20px;bottom:75px;display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:none;border-radius:50%;background:#1900ff;visibility:visible;opacity:1;transition:visibility .5s,opacity .5s}
 .pwa-button[hidden]{display:flex;visibility:hidden;opacity:0}
@@ -354,92 +361,7 @@ label.switch {background-color:#d1d1d1;border-radius:8px}
 
 /* ---Main-IH3 snip1543 page pic--- */
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro); @import url(https://fonts.googleapis.com/css?family=Teko:700); .Main-IH3{display:flex;justify-content:center;align-items:center;flex-flow:wrap;margin:0;height:100%;} .snip1543 { background-color: #fff; color: #ffffff; font-family: 'Source Sans Pro', sans-serif; font-size: 16px; margin: 10px; max-width: 315px; min-width: 230px; overflow: hidden; position: relative; text-align: left; width: 100%; -webkit-transform: translateZ(0); transform: translateZ(0); } .snip1543 *, .snip1543 *:before, .snip1543 *:after { -webkit-box-sizing: border-box; box-sizing: border-box; -webkit-transition: all 0.45s ease; transition: all 0.45s ease; } .snip1543 img { backface-visibility: hidden; max-width: 100%; vertical-align: top; } .snip1543:before, .snip1543:after { position: absolute; top: 0; bottom: 0; left: 0; right: 0; content: ''; background-color:#ff4a03; opacity: 0.5; -webkit-transition: all 0.45s ease; transition: all 0.45s ease; } .snip1543:before { -webkit-transform: skew(30deg) translateX(-80%); transform: skew(30deg) translateX(-80%); } .snip1543:after { -webkit-transform: skew(-30deg) translateX(-70%); transform: skew(-30deg) translateX(-70%); } .snip1543 figcaption { position: absolute; top: 0px; bottom: 0px; left: 0px; right: 0px; z-index: 1; bottom: 0; padding: 25px 40% 25px 20px; } .snip1543 figcaption:before, .snip1543 figcaption:after { position: absolute; top: 0; bottom: 0; left: 0; right: 0; background-color: #b81212; box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); content: ''; opacity: 0.5; z-index: -1; } .snip1543 figcaption:before { -webkit-transform: skew(30deg) translateX(-100%); transform: skew(30deg) translateX(-100%); } .snip1543 figcaption:after { -webkit-transform: skew(-30deg) translateX(-90%); transform: skew(-30deg) translateX(-90%); } .snip1543 h3, .snip1543 p { margin: 0; opacity: 0; letter-spacing: 1px; } .snip1543 h3 { font-family: 'Teko', sans-serif; font-size: 36px; font-weight: 700; line-height: 1em; text-transform: uppercase; } .snip1543 p { font-size: 0.9em; } .snip1543 a { position: absolute; top: 0; bottom: 0; left: 0; right: 0; z-index: 1; } .snip1543:hover h3, .snip1543.hover h3, .snip1543:hover p, .snip1543.hover p { -webkit-transform: translateY(0); transform: translateY(0); opacity: 0.9; -webkit-transition-delay: 0.2s; transition-delay: 0.2s; } .snip1543:hover:before, .snip1543.hover:before { -webkit-transform: skew(30deg) translateX(-20%); transform: skew(30deg) translateX(-20%); -webkit-transition-delay: 0.05s; transition-delay: 0.05s; } .snip1543:hover:after, .snip1543.hover:after { -webkit-transform: skew(-30deg) translateX(-10%); transform: skew(-30deg) translateX(-10%); } .snip1543:hover figcaption:before, .snip1543.hover figcaption:before { -webkit-transform: skew(30deg) translateX(-40%); transform: skew(30deg) translateX(-40%); -webkit-transition-delay: 0.15s; transition-delay: 0.15s; } .snip1543:hover figcaption:after, .snip1543.hover figcaption:after { -webkit-transform: skew(-30deg) translateX(-30%); transform: skew(-30deg) translateX(-30%); -webkit-transition-delay: 0.1s; transition-delay: 0.1s; } 
-/*-- Share QR Start --*/ .auto-share-box {
-  backdrop-filter: blur(10px);
-  padding: 10px;
-  border-radius: 16px;
-  text-align: center;
-  max-width: 220px;
-  margin: 40px auto;
-  border: 2px solid #4CAF50;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.4);
-  font-family: 'Segoe UI', sans-serif;
-}
-.share-buttons {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-.share-buttons button,
-.share-buttons a {
-  background: linear-gradient(135deg, #4CAF50, #2E7D32);
-  color: white;
-  padding: 10px 20px;
-  font-size: 15px;
-  border: none;
-  border-radius: 10px;
-  text-decoration: none;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-.share-buttons button:hover,
-.share-buttons a:hover {
-  transform: scale(1.05);
-}
-.copy-toast {
-  display: none;
-  margin-top: 10px;
-  padding: 8px 16px;
-  background: #4CAF50;
-  border-radius: 20px;
-  color: white;
-  font-size: 14px;
-  animation: fadeInOut 2s ease-in-out;
-}
-.qr-popup {
-  display: none;
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  backdrop-filter: blur(8px);
-  background: rgba(0,0,0,0.7);
-  z-index: 999;
-}
-.qr-box {
-  background: #1c1c1c;
-  color: white;
-  border-radius: 12px;
-  padding: 20px;
-  max-width: 300px;
-  margin: 12% auto;
-  text-align: center;
-  position: relative;
-}
-.qr-box hjh {
-  margin-bottom: 10px;
-}
-.qr-close {
-  position: absolute;
-  right: 10px;
-  top: 6px;
-  font-size: 24px;
-  cursor: pointer;
-  color: #ccc;
-}
-.qr-close:hover {
-  color: white;
-}
-.qr-download {
-  margin-top: 10px;
-  padding: 8px 16px;
-  background: #4CAF50;
-  border: none;
-  color: white;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 16px;
-}/*-- Share QR End --*/
+
  /* CSS News Ticker */
 .ticker-wrap {
   display: block;
